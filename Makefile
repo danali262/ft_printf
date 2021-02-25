@@ -33,7 +33,7 @@ $(NAME): $(OBJS)
 	cp $(LIBFT_DIR)/$(LIBFT) $(NAME)
 	ar rcs $(NAME) $(OBJS)
 
-%.o : %.s
+%.o : %.c
 	$(CC) -c $(CFLAGS) -o $@ $<
 
 clean:
